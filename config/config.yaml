@@ -1,0 +1,7 @@
+# Configuration file for the Streamlit app
+app:
+  title: "ML Dashboard"
+  version: "1.0"
+
+logging:
+  level: "INFO"
