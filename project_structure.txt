@@ -1,0 +1,15 @@
+Hackathon-Team26/
+├── xto10x_hackathon_april2025.py      # Your existing data analysis and model training script
+├── app.py                             # The main Streamlit application file
+├── data/                              # Optional: Directory to store uploaded or default datasets
+│   └── your_dataset.csv
+├── models/                            # Optional: Directory to save/load trained models
+│   └── trained_model.pkl
+├── utils/                             # Utility functions (modular code helpers)
+│   ├── data_loader.py                 # Functions to load/clean data
+│   └── model_loader.py                # Functions to load/training models
+├── visualizations/                    # Optional: Reusable plotting utilities
+│   └── plot_functions.py
+├── static/                            # Static files like CSS
+│   └── style.css
+└── README.md
