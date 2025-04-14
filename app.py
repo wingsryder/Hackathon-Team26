@@ -57,10 +57,10 @@ def main():
     results_df = load_results()
     st.dataframe(results_df)
 
-    # Update Metrics Table to load data from notebook
+    # Update Metrics Table to match the style of Model Results from Notebook
     with tab1:
         st.write("### Metrics Table")
-        st.table(results_df)  # Use notebook results
+        st.dataframe(results_df)  # Use the same dataframe display style as the notebook results
 
     # Update Bar Plot to use notebook results
     with tab2:

@@ -1,2 +1,5 @@
+streamlitpandasnumpy
 matplotlib
 seaborn
+scikit-learn
+joblib
