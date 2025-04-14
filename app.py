@@ -16,7 +16,7 @@ def load_js():
         st.markdown(f"<script>{f.read()}</script>", unsafe_allow_html=True)
 
 def main():
-    st.set_page_config(page_title="ML Dashboard", layout="wide")
+    st.set_page_config(page_title="Application Dashboard", layout="wide")
     load_css()
     load_js()
 
@@ -25,10 +25,10 @@ def main():
     selected_model = st.sidebar.selectbox("Select Model", ["Logistic Regression", "Decision Tree", "Random Forest", "Gradient Boosting", "SVM"])
 
     # Main sections
-    st.title("ML Dashboard")
+    st.title("Application Dashboard")
 
     # Dataset display
-    st.header("Dataset")
+    st.header("Dataset Preview")
     df = load_data()
     st.dataframe(df.head())
 
@@ -37,7 +37,7 @@ def main():
     metrics = evaluate_model(selected_model)
 
     # Tabs for better organization
-    tab1, tab2, tab3 = st.tabs(["Metrics Table", "Bar Plot", "Confusion Matrix"])
+    tab1, tab2, tab3 = st.tabs(["METRICS TABLE ", "BAR PLOT", "CONFUSION MATRIX"])
 
     # Load results from the notebook
     @st.cache_data
@@ -53,7 +53,7 @@ def main():
         return pd.DataFrame(results)
 
     # Display results in the app
-    st.header("Model Results from Notebook")
+    st.header("Model Results")
     results_df = load_results()
     st.dataframe(results_df)
 
