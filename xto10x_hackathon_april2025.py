@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/18-t2ZYiOP0zho2xUR0Ebb-8WONA0t1Ru
 """
 
-!wget https://github.com/wingsryder/Hackathon-Team26/blob/main/Telcom-Customer-Churn.csv
+#!wget https://github.com/wingsryder/Hackathon-Team26/blob/main/Telcom-Customer-Churn.csv
 
 # Phase 1: Structured Procedural Approach for Telco Churn Dataset
 

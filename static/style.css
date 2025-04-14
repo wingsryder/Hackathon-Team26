@@ -64,3 +64,23 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Tab styling */
+
+div[data-baseweb="tab"] {
+    padding: 20px 20px !important;
+    border: 2px solid #ccc;
+    border-radius: 8px 8px 0 0;
+    margin-right: 5px;
+}
+
+div[data-baseweb="tab-list"] {
+    margin-bottom: 10px;
+}
+
+div[data-baseweb="tab-panel"] {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
